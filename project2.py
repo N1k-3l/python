@@ -1,11 +1,15 @@
-{
-	"build_systems":
-	[
-		{
-			"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
-			"name": "Anaconda Python Builder",
-			"selector": "source.python",
-			"shell_cmd": "\"/usr/bin/python3.9\" -u \"$file\""
-		}
-	]
-}
+
+
+list1 = [534, 53, 23, 6, 98, 13, 0]
+list1.sort()
+print(list1)
+
+
+
+
+dict1 = {1:'a', 2: 'b', 3: 'c', 4: 'd', 5: 'e'}
+for i in dict1:
+    print(i, dict1[i])
+
+
+
