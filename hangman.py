@@ -73,7 +73,8 @@ def check(p, l):
 
 
 
-def push(*indexes):
+def push(indexes):
+    print(indexes)
     for i in indexes:
         EMPTY_[i] = U_LETTER
     # push letters to empty
@@ -97,7 +98,7 @@ while EMPTY_ != PLAYWORD:
     if t == []:
         ATTEMPTS += 1
     else:
-        push(*t)
+        push(t)
     if ATTEMPTS > 5:
         print(HANGMANPICS[ATTEMPTS])
         print('R.I.P')
