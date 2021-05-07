@@ -7,12 +7,14 @@ class Animal(object):
 class Human():
     """Specify race if necessary"""
     dangerous = True
+    
     def __init__(self, race = None):
         self.race = race
     def is_dangerous(self, animal):
         if animal.dangerous:
             if animal.__class__ == Human:
                 animal.name = 'Human'
+                animal.dangerous = 'The most dangerous Animal'
             print(f'This {animal.name} is dangerous for Human! ({animal.dangerous})')
         else:
             print(f'This {animal.name} is friendly for Human!')
